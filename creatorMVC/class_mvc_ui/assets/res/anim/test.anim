@@ -1,0 +1,42 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "test",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -451,
+            296
+          ],
+          "motionPath": [
+            [
+              23,
+              -323,
+              -126,
+              -225,
+              301,
+              -505
+            ]
+          ]
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": [
+            490,
+            -321
+          ],
+          "motionPath": []
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,14 +1,13 @@
+// 服务器
 var express = require('express');
 var app = express();
 
 
 var msgpack = require("msgpack-lite");
-// encode from JS Object to MessagePack (Buffer)
-
-var buffer = msgpack.encode({"foo": "bar"});
-// decode from MessagePack (Buffer) to JS Object
-
-var data = msgpack.decode(buffer); // => {"foo": "bar"}
+// msgpack.encode() 压缩Json
+// var buffer = msgpack.encode({"foo": "bar"});
+// msgpack.decode() 解压Json
+// var data = msgpack.decode(buffer); 
 
 
 // 压缩Json
