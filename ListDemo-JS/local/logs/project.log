@@ -1,0 +1,67 @@
+2020-01-10T09:26:36.704Z - normal: Load ~/.CocosCreator/settings.json
+2020-01-10T09:26:36.928Z - normal: Initializing Asset Database
+2020-01-10T09:26:36.949Z - normal: checking language setting...
+2020-01-10T09:26:36.949Z - normal: Language: zh
+2020-01-10T09:26:39.092Z - success: preview server running at http://localhost:7456
+2020-01-10T09:26:39.098Z - success: protocol editor-framework registered
+2020-01-10T09:26:39.098Z - success: protocol app registered
+2020-01-10T09:26:39.098Z - success: protocol theme registered
+2020-01-10T09:26:39.098Z - success: protocol packages registered
+2020-01-10T09:26:39.099Z - success: protocol uuid registerred
+2020-01-10T09:26:39.099Z - success: protocol db registerred
+2020-01-10T09:26:39.099Z - success: protocol thumbnail registerred
+2020-01-10T09:26:39.099Z - success: protocol unpack registerred
+2020-01-10T09:26:39.099Z - success: protocol disable-commonjs registerred
+2020-01-10T09:26:39.186Z - normal: connected!
+2020-01-10T09:26:39.187Z - normal: Check project C:\Users\zola\Desktop\meGitHubPro\CocosCretorCoomon\ListDemo-JS
+2020-01-10T09:26:39.191Z - normal: Initializing project C:\Users\zola\Desktop\meGitHubPro\CocosCretorCoomon\ListDemo-JS
+2020-01-10T09:26:39.259Z - success: adapters loaded
+2020-01-10T09:26:39.264Z - success: asset-db-debugger loaded
+2020-01-10T09:26:39.626Z - success: fb-audience-network loaded
+2020-01-10T09:26:39.686Z - success: fb-live-stream loaded
+2020-01-10T09:26:39.702Z - success: google-play-instant loaded
+2020-01-10T09:26:39.736Z - success: huawei-runtime loaded
+2020-01-10T09:26:39.737Z - success: jkw-adapter loaded
+2020-01-10T09:26:39.738Z - success: jsb-adapter loaded
+2020-01-10T09:26:39.822Z - success: oppo-runtime loaded
+2020-01-10T09:26:39.842Z - success: package-manager loaded
+2020-01-10T09:26:39.890Z - success: runtime-dev-tools loaded
+2020-01-10T09:26:39.916Z - success: sdkbox loaded
+2020-01-10T09:26:39.950Z - success: ui-kit-preview-extra loaded
+2020-01-10T09:26:39.955Z - success: ui-kit-preview loaded
+2020-01-10T09:26:40.008Z - success: vivo-runtime loaded
+2020-01-10T09:26:40.026Z - success: alipay-minigame loaded
+2020-01-10T09:26:40.074Z - success: assets loaded
+2020-01-10T09:26:40.090Z - success: baidugame-opendata loaded
+2020-01-10T09:26:40.096Z - success: baidugame loaded
+2020-01-10T09:26:40.115Z - success: builder loaded
+2020-01-10T09:26:40.789Z - success: cocos-services loaded
+2020-01-10T09:26:40.794Z - success: console loaded
+2020-01-10T09:26:40.821Z - success: fb-instant-games loaded
+2020-01-10T09:26:40.825Z - success: game-window loaded
+2020-01-10T09:26:40.827Z - success: google-instant-games loaded
+2020-01-10T09:26:40.832Z - success: hierarchy loaded
+2020-01-10T09:26:40.840Z - success: inspector loaded
+2020-01-10T09:26:41.902Z - success: cpk-publish loaded
+2020-01-10T09:26:41.905Z - success: keystore loaded
+2020-01-10T09:26:41.932Z - success: node-library loaded
+2020-01-10T09:26:41.933Z - success: open-recent-items loaded
+2020-01-10T09:26:41.937Z - success: package-asset loaded
+2020-01-10T09:26:41.939Z - success: preferences loaded
+2020-01-10T09:26:41.941Z - success: project-exporter loaded
+2020-01-10T09:26:41.943Z - success: project-importer loaded
+2020-01-10T09:26:41.955Z - success: project-settings loaded
+2020-01-10T09:26:41.966Z - success: scene loaded
+2020-01-10T09:26:41.973Z - success: simulator-debugger loaded
+2020-01-10T09:26:41.983Z - success: sprite-editor loaded
+2020-01-10T09:26:41.996Z - success: store loaded
+2020-01-10T09:26:42.000Z - success: timeline loaded
+2020-01-10T09:26:42.026Z - success: wechatgame-opendata loaded
+2020-01-10T09:26:42.059Z - success: wechatgame loaded
+2020-01-10T09:26:42.073Z - success: xiaomi-runtime loaded
+2020-01-10T09:26:42.770Z - info: Cocos Service load base data!
+2020-01-10T09:26:43.545Z - normal: Initializing Cocos2d
+2020-01-10T09:26:47.040Z - normal: Initializing engine extends
+2020-01-10T09:27:00.448Z - normal: Loading packages
+2020-01-10T09:27:00.470Z - normal: Watching packages
+2020-01-10T09:27:01.952Z - normal: Run Application
