@@ -7,8 +7,6 @@ cc.Class({
 
     },
 
-    
-
     start () {
 
     },

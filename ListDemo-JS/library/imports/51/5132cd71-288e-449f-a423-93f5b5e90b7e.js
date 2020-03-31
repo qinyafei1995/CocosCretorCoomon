@@ -746,7 +746,7 @@ cc.Class({
 
         this._calcViewPos();
 
-        console.log('this.frameCount----->', this.frameCount, 'this._updateRate----->', this._updateRate, 'this._sizeType----->', this._sizeType);
+        // console.log('this.frameCount----->', this.frameCount, 'this._updateRate----->', this._updateRate, 'this._sizeType----->', this._sizeType);
 
         var vTop = void 0,
             vRight = void 0,
@@ -834,15 +834,16 @@ cc.Class({
                 }
                 curId = Math.floor(curId) * this._colLineNum;
                 endId = Math.ceil(endId) * this._colLineNum;
-                console.log('00000000000000', 'hh -->', hh);
-                console.log('11111111111111', '-vTop ==>', -vTop, 'this._topGap ==>', this._topGap, 'curId ==>', curId);
-                console.log('22222222222222', '-vBottom >>>', -vBottom, 'this._bottomGap >>>', this._bottomGap, 'endId >>>', endId);
+                // console.log('00000000000000', 'hh -->', hh);
+                // console.log('11111111111111', '-vTop ==>', -vTop, 'this._topGap ==>', this._topGap, 'curId ==>', curId);
+                // console.log('22222222222222', '-vBottom >>>', -vBottom, 'this._bottomGap >>>', this._bottomGap, 'endId >>>', endId);
                 endId--;
                 if (curId < 0) curId = 0;
                 if (endId >= this._numItems) endId = this._numItems - 1;
                 // cc.log(curId, endId);
                 for (; curId <= endId; curId++) {
                     this.displayData.push(this._calcItemPos(curId));
+                    console.log('>>>>>>>>', this.displayData);
                 }
             }
             if (this.displayData.length <= 0 || !this._numItems) {
@@ -1937,7 +1938,7 @@ cc.Class({
         t.scrollTo(pageNum, timeInSecond);
     },
 
-    //计算 CustomSize（这个函数还是保留吧，某些罕见的情况的确还是需要手动计算customSize的）
+    //计算 CustomSize（这个函数还是保留吧， ） 
     calcCustomSize: function calcCustomSize(numItems) {
         var t = this;
         if (!t.checkInited()) return;
