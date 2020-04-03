@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 1912,
-      "y": -8,
-      "width": 1936,
-      "height": 1056,
+      "x": 1920,
+      "y": 0,
+      "width": 1920,
+      "height": 1040,
       "layout": {
         "children": [
           {
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 497.34375,
+                "height": 497,
                 "type": "panel",
-                "width": 368.890625
+                "width": 369
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 421.65625,
+                "height": 422,
                 "type": "panel",
-                "width": 368.890625
+                "width": 369
               }
             ],
             "height": 922,
             "type": "dock-v",
-            "width": 368.890625
+            "width": 369
           },
           {
             "children": [
@@ -43,9 +43,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 517.984375,
+                "height": 518,
                 "type": "panel",
-                "width": 1039.234375
+                "width": 759
               },
               {
                 "active": 0,
@@ -54,14 +54,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 401.015625,
+                "height": 401,
                 "type": "panel",
-                "width": 1039.234375
+                "width": 759
               }
             ],
             "height": 922,
             "type": "dock-v",
-            "width": 1039.234375
+            "width": 759
           },
           {
             "active": 0,
@@ -70,7 +70,7 @@
             ],
             "height": 922,
             "type": "panel",
-            "width": 489.875
+            "width": 770
           }
         ],
         "type": "dock-h"
