@@ -5,7 +5,7 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 1920,
+      "x": 0,
       "y": 0,
       "width": 1920,
       "height": 1040,
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 497,
+                "height": 497.34375,
                 "type": "panel",
-                "width": 369
+                "width": 368.890625
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 422,
+                "height": 421.65625,
                 "type": "panel",
-                "width": 369
+                "width": 368.890625
               }
             ],
             "height": 922,
             "type": "dock-v",
-            "width": 369
+            "width": 368.890625
           },
           {
             "children": [
@@ -43,9 +43,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 518,
+                "height": 517.984375,
                 "type": "panel",
-                "width": 759
+                "width": 759.59375
               },
               {
                 "active": 0,
@@ -54,14 +54,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 401,
+                "height": 401.015625,
                 "type": "panel",
-                "width": 759
+                "width": 759.59375
               }
             ],
             "height": 922,
             "type": "dock-v",
-            "width": 759
+            "width": 759.59375
           },
           {
             "active": 0,
@@ -70,20 +70,12 @@
             ],
             "height": 922,
             "type": "panel",
-            "width": 770
+            "width": 769.515625
           }
         ],
         "type": "dock-h"
       },
-      "panels": [
-        "hierarchy",
-        "assets",
-        "scene",
-        "console",
-        "timeline",
-        "game-window",
-        "inspector"
-      ]
+      "panels": []
     },
     "worker": {}
   },

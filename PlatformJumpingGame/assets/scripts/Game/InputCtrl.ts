@@ -4,7 +4,11 @@ const { ccclass, property } = cc._decorator;
 export default class InputCtrl extends cc.Component {
     // 摄像机
     @property(cc.Node)
-    cameraNode: cc.Node = null;
+    tagerNode: cc.Node = null;
+
+    // 触摸节点
+    @property(cc.Node)
+    touchNode: cc.Node = null;
 
     // 移动速度
     @property
@@ -25,21 +29,21 @@ export default class InputCtrl extends cc.Component {
     }
 
     update(dt) {
-        let nextX = this.cameraNode.x + this.moveSpeed * dt * this._moveLRDic;
+        let nextX = this.tagerNode.x + this.moveSpeed * dt * this._moveLRDic;
         if (nextX >= this.cameraMoveSpace[0].x && nextX <= this.cameraMoveSpace[1].x) {
-            this.cameraNode.x = nextX;
+            this.tagerNode.x = nextX;
         }
 
-        this.cameraNode.y += this.moveSpeed * dt * this._moveUDDic;
+        this.tagerNode.y += this.moveSpeed * dt * this._moveUDDic;
     }
 
     initEvent() {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
 
-        this.cameraNode.on(cc.Node.EventType.TOUCH_START, this.clickCamera, this);
-        this.cameraNode.on(cc.Node.EventType.TOUCH_END, this.closeDrection, this);
-        this.cameraNode.on(cc.Node.EventType.TOUCH_CANCEL, this.closeDrection, this);
+        this.touchNode.on(cc.Node.EventType.TOUCH_START, this.clickCamera, this);
+        this.touchNode.on(cc.Node.EventType.TOUCH_END, this.closeDrection, this);
+        this.touchNode.on(cc.Node.EventType.TOUCH_CANCEL, this.closeDrection, this);
     }
 
     onKeyDown(event) {

@@ -360,7 +360,7 @@ cc.Class({
         }
 
         t._layout = t.content.getComponent(cc.Layout);
-        
+
 
         t._align = t._layout.type; //排列模式
         t._resizeMode = t._layout.resizeMode; //自适应模式
@@ -472,7 +472,6 @@ cc.Class({
         // let isAutoScrollBrake = this._scrollView._isNecessaryAutoScrollBrake();
         let brakingFactor = 1;
         this._scrollView._autoScrollAccumulatedTime += dt * (1 / brakingFactor);
-        // console.log('??????', dt);
         let percentage = Math.min(1, this._scrollView._autoScrollAccumulatedTime / this._scrollView._autoScrollTotalTime);
         if (this._scrollView._autoScrollAttenuate) {
             let time = percentage - 1;
@@ -760,10 +759,11 @@ cc.Class({
         if (this._sizeType) {
             vTop = this.viewTop;
             vBottom = this.viewBottom;
-            console.log('vTop======',vTop, 'vBottom======', vBottom);
+
         } else {
             vRight = this.viewRight;
             vLeft = this.viewLeft;
+            console.log('vRight======', vRight, 'vLeft======', vLeft);
         }
 
         if (this._virtual) {
@@ -776,6 +776,7 @@ cc.Class({
                 let breakFor = false;
                 //如果该item的位置在可视区域内，就推入displayData
                 for (; curId <= endId && !breakFor; curId++) {
+                    console.log('curId =====>', curId);
                     itemPos = this._calcItemPos(curId);
                     switch (this._align) {
                         case cc.Layout.Type.HORIZONTAL:
@@ -835,18 +836,13 @@ cc.Class({
                 }
                 curId = Math.floor(curId) * this._colLineNum;
                 endId = Math.ceil(endId) * this._colLineNum;
-                // console.log('00000000000000', 'hh -->', hh);
-                // console.log('11111111111111', '-vTop ==>', -vTop, 'this._topGap ==>', this._topGap, 'curId ==>', curId);
-                // console.log('22222222222222', '-vBottom >>>', -vBottom, 'this._bottomGap >>>', this._bottomGap, 'endId >>>', endId);
                 endId--;
                 if (curId < 0)
                     curId = 0;
                 if (endId >= this._numItems)
                     endId = this._numItems - 1;
-                // cc.log(curId, endId);
                 for (; curId <= endId; curId++) {
                     this.displayData.push(this._calcItemPos(curId));
-                    console.log('>>>>>>>>', this.displayData);
                 }
             }
             if (this.displayData.length <= 0 || !this._numItems) { //if none, delete all.
@@ -901,7 +897,6 @@ cc.Class({
                 this.viewRight = this.viewLeft + this.node.width;
                 this.elasticRight = this.viewRight > this.content.width ? Math.abs(this.viewRight - this.content.width) : 0;
                 this.viewRight += this.elasticRight;
-                // cc.log(this.elasticLeft, this.elasticRight, this.viewLeft, this.viewRight);
                 break;
             case 2://单行HORIZONTAL（RIGHT_TO_LEFT）、网格VERTICAL（RIGHT_TO_LEFT）
                 this.elasticRight = scrollPos.x < 0 ? -scrollPos.x : 0;
@@ -909,7 +904,6 @@ cc.Class({
                 this.viewLeft = this.viewRight - this.node.width;
                 this.elasticLeft = this.viewLeft < -this.content.width ? Math.abs(this.viewLeft + this.content.width) : 0;
                 this.viewLeft -= this.elasticLeft;
-                // cc.log(this.elasticLeft, this.elasticRight, this.viewLeft, this.viewRight);
                 break;
             case 3://单列VERTICAL（TOP_TO_BOTTOM）、网格HORIZONTAL（TOP_TO_BOTTOM）
                 this.elasticTop = scrollPos.y < 0 ? Math.abs(scrollPos.y) : 0;
@@ -917,8 +911,6 @@ cc.Class({
                 this.viewBottom = this.viewTop - this.node.height;
                 this.elasticBottom = this.viewBottom < -this.content.height ? Math.abs(this.viewBottom + this.content.height) : 0;
                 this.viewBottom += this.elasticBottom;
-                // cc.log(this.elasticTop, this.elasticBottom, this.viewTop, this.viewBottom);
-                console.log('计算当前显示位置', 'elasticTop====', this.elasticTop,  'viewTop====',this.viewTop, 'viewBottom====', this.viewBottom, 'elasticBottom====', this.elasticBottom);
                 break;
             case 4://单列VERTICAL（BOTTOM_TO_TOP）、网格HORIZONTAL（BOTTOM_TO_TOP）
                 this.elasticBottom = scrollPos.y > 0 ? Math.abs(scrollPos.y) : 0;
@@ -926,7 +918,6 @@ cc.Class({
                 this.viewTop = this.viewBottom + this.node.height;
                 this.elasticTop = this.viewTop > this.content.height ? Math.abs(this.viewTop - this.content.height) : 0;
                 this.viewTop -= this.elasticTop;
-                // cc.log(this.elasticTop, this.elasticBottom, this.viewTop, this.viewBottom);
                 break;
         }
     },
