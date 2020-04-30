@@ -1,10 +1,15 @@
 {
   "group-list": [
-    "default"
+    "default",
+    "ui"
   ],
   "collision-matrix": [
     [
       true
+    ],
+    [
+      false,
+      false
     ]
   ],
   "excluded-modules": [],
