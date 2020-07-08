@@ -1,7 +1,7 @@
 /**
  * 定义视差的3种方向
  */
-let parallxEnum = cc.Enum({
+let enumParallx = cc.Enum({
     HORIZONTAL: 0,         // 横向
     VERTICEL: 1,           // 纵向
     OMNIBERING: 2         // 全方向
@@ -12,8 +12,8 @@ cc.Class({
 
     properties: {
         typeParallx: {
-            default: parallxEnum.HORIZONTAL,
-            type: parallxEnum,
+            default: enumParallx.HORIZONTAL,
+            type: enumParallx,
             tooltip: "HORIZONTAL 横向\n VERTICEL 纵向\n OMNIBERING 双向\n ",
             displayName: "视差类型",
         },
@@ -39,6 +39,7 @@ cc.Class({
     },
 
     onLoad() {
+        console.log('??????', enumParallx);
         this.init();
     },
 
@@ -80,15 +81,15 @@ cc.Class({
      */
     _countCameraMoveDirection() {
         switch (this.typeParallx) {
-            case parallxEnum.HORIZONTAL:
+            case enumParallx.HORIZONTAL:
                 this._countHorizontal();
                 break;
 
-            case parallxEnum.VERTICEL:
+            case enumParallx.VERTICEL:
                 this._countVerticel();
                 break;
 
-            case parallxEnum.OMNIBERING:
+            case enumParallx.OMNIBERING:
                 this._countHorizontal();
                 this._countVerticel();
                 break;
@@ -130,15 +131,15 @@ cc.Class({
      */
     _cameraMove(dt) {
         switch (this.typeParallx) {
-            case parallxEnum.HORIZONTAL:
+            case enumParallx.HORIZONTAL:
                 this._cameraMoveHorizontal(dt);
                 break;
 
-            case parallxEnum.VERTICEL:
+            case enumParallx.VERTICEL:
                 this._cameraMoveVerticel(dt);
                 break;
 
-            case parallxEnum.OMNIBERING:
+            case enumParallx.OMNIBERING:
                 this._cameraMoveHorizontal(dt);
                 this._cameraMoveVerticel(dt);
                 break;
@@ -183,7 +184,7 @@ cc.Class({
     },
 
     update(dt) {
-        if (!this._isRun) {
+        if (!this._isRun()) {
             return
         }
 

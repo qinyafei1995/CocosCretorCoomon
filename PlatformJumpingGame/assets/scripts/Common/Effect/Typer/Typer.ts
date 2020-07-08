@@ -21,7 +21,7 @@ export default class Typer extends cc.Component {
   }
 
   showLabelTyper() {
-    let str = '我是异名\n这是Label打字效果';
+    let str = '我是亚飞\n这是Label打字效果';
     this.richText.string = '';
     this.label.string = '';
     this.makeLaberTyper(str);

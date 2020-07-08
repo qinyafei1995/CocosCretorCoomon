@@ -1,0 +1,83 @@
+
+relo.png
+size: 401,119
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arms
+  rotate: true
+  xy: 115, 9
+  size: 108, 60
+  orig: 108, 60
+  offset: 0, 0
+  index: -1
+Boby
+  rotate: false
+  xy: 214, 44
+  size: 61, 73
+  orig: 61, 73
+  offset: 0, 0
+  index: -1
+Face
+  rotate: true
+  xy: 277, 52
+  size: 65, 48
+  orig: 65, 48
+  offset: 0, 0
+  index: -1
+Hair
+  rotate: false
+  xy: 285, 6
+  size: 57, 44
+  orig: 58, 44
+  offset: 1, 0
+  index: -1
+L-Forearm
+  rotate: false
+  xy: 327, 57
+  size: 43, 60
+  orig: 43, 60
+  offset: 0, 0
+  index: -1
+L-Thigh
+  rotate: false
+  xy: 373, 10
+  size: 26, 50
+  orig: 26, 50
+  offset: 0, 0
+  index: -1
+Necklace
+  rotate: true
+  xy: 344, 4
+  size: 51, 27
+  orig: 51, 27
+  offset: 0, 0
+  index: -1
+R-Forearm
+  rotate: true
+  xy: 214, 8
+  size: 34, 69
+  orig: 34, 69
+  offset: 0, 0
+  index: -1
+R-Thigh
+  rotate: false
+  xy: 372, 62
+  size: 27, 55
+  orig: 27, 55
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 177, 19
+  size: 98, 35
+  orig: 103, 36
+  offset: 3, 1
+  index: -1
+head
+  rotate: true
+  xy: 2, 2
+  size: 115, 111
+  orig: 115, 111
+  offset: 0, 0
+  index: -1
