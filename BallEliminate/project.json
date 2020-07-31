@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "BallEliminate",
+  "id": "7b811733-6bf0-40a3-b417-b6ea7a511162",
+  "version": "2.3.3",
+  "isNew": false
+}
