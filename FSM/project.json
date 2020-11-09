@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "FSM",
+  "id": "0cc456e6-814a-4edf-b8c5-609006b5ef79",
+  "version": "2.3.3",
+  "isNew": false
+}
